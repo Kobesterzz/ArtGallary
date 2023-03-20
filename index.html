@@ -9,14 +9,39 @@
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"   rel="stylesheet"  type='text/css'>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <script src="script.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 <body>
+    <header>
+        <h1 class="logo">AG</h1>
+        <button "><i id="hamburger-button" class=" fa-lg fa-2x fa fa-bars"></i></button>
+        <a href="./LoginScreen.html" class="login">LogIn</a>
+    </header>
+
+    <div id="modal">
+          <div id="modal-content">
+            <header>
+              <div class="modalHeader">
+                <a href="index.html" class="logo" id='logo-modal'><h1>AG</h1></a>
+                <button ><i class="fa fa-lg fa-3x fa-close" id="close-button"></i></button>
+              </div>
+            </header>
+          
+            <!-- modal content goes here -->
+
+            <div class="modal-content">
+              <a href="index.html" id="modalHom">Home</a>
+              <a href="./LoginScreen.html"  id="modalLogin">Login</a>
+              <a href="" id="modalPro">Profile</a>
+            </div>
+          </div>
+      </div>
 
     <div class="landingPage">
-        <h1 class="landingQuote"> Welcome</h1>
-        <h1 class="landingQuote"> To Art<span class="highlight">Gallary</span></h1>
-        <a href="./LoginScreen.html">LogIn</a>
+        <h1 class="landingQuote"> Welcome To</h1>
+        <h1 class="landingQuote"> Art<span class="highlight">Gallary</span></h1>
+        
     </div>
 
 </body>
