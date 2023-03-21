@@ -6,15 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Screen</title>
     <link rel="stylesheet" href="./LoginScreen.css">
-</head>
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"   rel="stylesheet"  type='text/css'>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <body>
+
+  <header>
+    <a href="./index.html"><h1 class="logo">AG</h1></a>
+    <button><i id="hamburger-button" class=" fa-lg fa-2x fa fa-bars"></i></button>
+  </header>
+
+  <div id="modal">
+    <div id="modal-content">
+      <header>
+        <div class="modalHeader">
+          <a href="index.html" class="logo" id='logo-modal'><h1>AG</h1></a>
+          <button ><i class="fa fa-lg fa-3x fa-close" id="close-button"></i></button>
+        </div>
+      </header>
+    
+      <!-- modal content goes here -->
+
+      <div class="modal-content">
+        <a href="index.html" id="modalHom">Home</a>
+        <a href="./LoginScreen.html"  id="modalLogin">Login</a>
+        <a href="" id="modalPro">Profile</a>
+      </div>
+    </div>
+</div>
 
     <div class="login-card">
         <div class="login-card-content">
-          <div class="header">
-            <div class="logo">
-              <div></div>
-            </div>
+          <div class="title">
             <h2>Art<span class="highlight">Gallary</span></h2>
             <h3>Unleash your artistic potential.</h3>
           </div>
