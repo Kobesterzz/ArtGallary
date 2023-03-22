@@ -28,7 +28,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   margin-left:15px;
-  margin-right:15px;
+  margin-right:0px;
 }
 
 .modalHeader{
@@ -61,6 +61,10 @@ header{
   font-size: 50px;
   z-index: 2000;
   text-decoration: none;
+}
+
+#hamburger-button{
+  margin-left:100px;
 }
 
 
@@ -97,8 +101,8 @@ body.modal-open{
 .landingPage {
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-    
+    font-size: 34px;
+    margin-top: 100px;
 }
   
 .login{
@@ -115,6 +119,117 @@ body.modal-open{
     font-family:SF pro;
 }
 
+.slogan{
+  display: flex;
+  justify-content: center;
+  font-family:SF pro;
+  color:#744c4c;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
 .highlight {
     color: #ffa0a0;
+}
+
+.login{
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 30px 0;
+  color: #ffa0a0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 20px;
+ 
+}
+.login:hover{
+  background: #ffa0a0;
+  color: #050801;
+  box-shadow: 0 0 5px #ffa0a0,
+              0 0 25px #ffa0a0,
+              0 0 50px #ffa0a0,
+              0 0 200px #ffa0a0;
+   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.login:nth-child(1){
+  filter: hue-rotate(270deg);
+}
+.login:nth-child(2){
+  filter: hue-rotate(110deg);
+}
+.login span{
+  position: absolute;
+  display: block;
+}
+.login span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#ffa0a0);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+  0%{
+      left: -100%;
+  }
+  50%,100%{
+      left: 100%;
+  }
+}
+.login span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#ffa0a0);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2{
+  0%{
+      top: -100%;
+  }
+  50%,100%{
+      top: 100%;
+  }
+}
+.login span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#ffa0a0);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+@keyframes animate3{
+  0%{
+      right: -100%;
+  }
+  50%,100%{
+      right: 100%;
+  }
+}
+
+.login span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#ffa0a0);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4{
+  0%{
+      bottom: -100%;
+  }
+  50%,100%{
+      bottom: 100%;
+  }
 }
