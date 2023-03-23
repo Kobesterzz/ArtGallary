@@ -34,7 +34,7 @@ header{
 .modalHeader{
   display:flex;
   justify-content: space-between;
-  background-color: #1c1c2c77;
+  
   height:60px;
 }
 
@@ -62,6 +62,7 @@ header{
   z-index: 2000;
   text-decoration: none;
 }
+
 
 #hamburger-button{
   margin-left:100px;
